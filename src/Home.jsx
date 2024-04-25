@@ -128,7 +128,7 @@ function Home() {
 
     // send data to backend
     axios
-      .post("http://159.89.97.175:5000//predict", {
+      .post("http://159.89.97.175:5000/predict", {
         age: age,
         height: height,
         weight: weight,
@@ -550,7 +550,7 @@ function Home() {
             }
 
             axios
-              .post("http://159.89.97.175:5000//truth", {
+              .post("http://159.89.97.175:5000/truth", {
                 age: age,
                 height: height,
                 weight: weight,
