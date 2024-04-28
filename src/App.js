@@ -8,7 +8,16 @@ import NotFound from "./NotFound";
 import Previous from "./Previous";
 
 function App() {
-  const [mode, setMode] = React.useState("dark");
+  const [mode, setMode] = React.useState(() => {
+    const mode = localStorage.getItem("mode");
+    return mode ? mode : "dark";
+  });
+
+  const toggleMode = (newMode) => {
+    setMode(newMode);
+    localStorage.setItem("mode", newMode);
+  };
+
   return (
     <ThemeProvider theme={mode === "light" ? themes.light : themes.dark}>
       <div
@@ -29,7 +38,7 @@ function App() {
         >
           <Appbar
             mode={mode}
-            setMode={setMode}
+            setMode={toggleMode}
           />
         </div>
 
