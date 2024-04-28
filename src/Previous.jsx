@@ -155,7 +155,7 @@ function Previous() {
         </Typography>
         {/* Table for all previous submissions */}
         <Paper sx={{ overflow: "hidden", width: "90vw" }}>
-          <TableContainer sx={{ maxHeight: 440 }}>
+          <TableContainer sx={{}}>
             <Table
               stickyHeader
               aria-label="sticky table"
