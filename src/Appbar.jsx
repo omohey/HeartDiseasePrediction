@@ -85,7 +85,7 @@ function Appbar({ mode, setMode }) {
               {pages.map((page) => (
                 <MenuItem
                   key={page.name}
-                  onClick={handleCloseNavMenu}
+                  onClick={page.onClick}
                 >
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
