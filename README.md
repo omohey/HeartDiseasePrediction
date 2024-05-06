@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Heart Disease Prediction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application that predicts the likelihood of a person having heart disease based on simple health metrics. The model for the application is a Neural Network model that was trained using Keras and TensorFlow. The application was built using React and Material-UI.
 
-## Available Scripts
+## How to Use
 
-In the project directory, you can run:
+Firstly, clone this repository. Then install the required dependencies by running the following command in the project directory:
 
-### `npm start`
+```bash
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After installing the dependencies, you can run the application by running the following command:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm start
+```
 
-### `npm test`
+The application will then be available at [http://localhost:3000](http://localhost:3000). You can then navigate to the application in your browser where you will find the following form to fill out in order to predict the likelihood of heart disease:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Insert Image of form -->
 
-### `npm run build`
+![Form](https://lh3.googleusercontent.com/fife/ALs6j_Hv7xbJV4_ALNyjiFPqO7FLXFlQPBTEqY6M1pNIhVkVQPo5yEzOFgiC767Uj-faNVQ2sPFeZUm6zM8szyDkX9I7T06Wu52tCuuRY3YVtjRZU74hsV1JkWQCDA6PjM486Y-Z9ZeijFyPmOnaxasRpJp5XYiXOyH8LB3ikFt85qakdjTCuxq6euXUInAISMx_QeA5kXGq3YSrwi2WvV9b-zIaq8vLCexxq0b1UKL8uPbf2YLcrPeqMPvI94v32SOmY8SlJjwSSolCooVAsgNrjJV-n7LZbbFIHCTb9FXrV51F087YPogNGY6tdXdLurAdgiybh3Bm28_OtCHOq8L8MBDuYB8IwVvZshuxX_zneTwdVhdw6L2lyTAxq2do3fFQQlR3FKA_H1RnQHrbN3KFCRTbWqD3o8rqMnphoiaPbvLQXPZqnG0-X7X03f2QPr3HmovzHR3OsztC-oo-6TC5Yfdb6jJCCYpkHeCNUuMcKF0zRH7ODqoHHifUwGq9KY6ZZAVWzAGK9bpYnFbHD0RBIGnVtzFJR8LXZrEXJWFbZFb_K3m6HHdh1E2nV-VCrk1JP7-9uD2SZ3EVVzB4pFeWi0aYNnCAZwHBalsbSmxyr0tLTmQhjUhaFTBgicOJCrfvgkR_2m4nzv_6ngqfIzEPtr9hbG75vSEYOyKgjpfOXoJY7dEe56No2lEPmzaIaL-PBVlhOp0A7P52j4y8ab9JpmaKgdzpKvDoPV6bhKYZ394u4PuKoHte23vBDwgrxpDn51x_kgd2BuUapIjDACktaQupBu3LkRX6my40SgnusKK0NzpHaOikQGinya5c3iQxRPDnkCQtjBeqswHbdWnlvaS54NjDCKimg6oOmAPMw8Q3056hJW6MnHKf7kmLHb6680qkUdRbSNp3m7hJEPEpEJnPZJiYiYClpMbGEiQtvVm-KzRhy6EpoHcfvpXIOMpfxSMpBVIMDteGsc12AqYIYS9Q78lg9Xdp_bM9C05ps4XNlkkrYaaYnpDJjjy6R2lgdtLLKWVyGmocBRVNjt6QsrE18Nm3PBV42YgZrO0BdP9Z5ATaBlxcl3rSFjQSo8LCTJyzvUShg8eMzhhF32LkS7iWAxwsZJRivoXbjBvj8Epigb2Ri3WpWSbM46M1CRljn99cWut0NgSFf3gnvp4aTmLAfwYmLUHMr9yBoTm_Uu5NnJhFXSZbDE5UNSFJVJmNiQSZyTZD0AQFz1Ll4Ter7VVjcPTYKe-ou13tTX8ePipoESzrYTMOh8iszwu3144LXnERHRyIU9PpL3xOZO6BJI78Mv57rYmioE7n8uo6QolYPkEQQgW-bHyAJEbqnnd4htqyqmkL4ZDhOwPs8yHwRIfhmPqATHCZjSWV8K5LzZP4NT9mPk4-WnASIPH1jhu4VsMr0o1xgzpLgTUFpPKcSvpwaTiqmJUcagErMggVCslbUTcaEvrINpcz7_E66ALUjJ9oSeQYsVdoGKULduY5I2I6SjIXtzhynnVuF7ecBe3qy5vKWstGQidw2FtfDQ-Vb2Se0THWo1N9hAtDWF88AWErQCYHD0r0MI7lSt7DsY5TTcvEOkpr0YPN__90RKdP7k53MVOtOqcz9JFrVsHooWVsZnIkezs4JIQdjdseAYlGtwSicGk=w1920-h918)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After filling out the form, you can click the "Predict" button to see the prediction. The prediction will appear in a new modal as either be positive or negative for heart disease.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Prediction](https://lh3.googleusercontent.com/fife/ALs6j_GXIaFTzeM21Ak_UxcxhI0EyPac7vuS5ibpRGvvhLMmtD-i9PsBLCInKIV_76RyDkQ4gXDukn3xkNTd5cph9uCAqX0xD6QHmmkoW2nmbSF9cOlwGkPP5U697YXdIgwAEoMBiq_imI5dgFV3X9X9Zhu3ILaQKRCxbzu2Gbd7Av7zCd5E1eCef6pp5tVeA-DDtEWwhx-006IvOacWSJZRi7WUFHXYPd-2yxOKGg7IfiS-1PScEIylW1jTtd8bDhtQGhYvRnhVaoBf-exPr0CDxyF9tH2Qpu6R4JG4wNtiH4l-SrXGrFbRugWLijTHRGcxtLSN9y3iuy0-90WLKX6_4uweMoPq7n_vCcyoKALy-sb1F5qV6Tdes8tYfx1WqG41RkJiMeulQZaWlW6u2JYMGlJwMp_Vqg4dHKRsNuNuwGMZFfsBniV8X-CWxgtVldItz6IoF8ty6D2fAFtTMnY674Ex_Yio0v3ZSpUp8a8UFbtp-kmCMWGi5QuYJOhAWaPriPh4Ws5n8hmRESE3rvXRTLZP-LnCnu1JfE-y0ELU3qjtVHcgppPoP3qPAGHQ9hjwTQYzWOuKn5irWeVrwhaLom0zg0BL0d9tNpD3Ui5lYBIkUFnIU9xPDzLSYPDrokcgeU-hO3oFP0Z4TgIDse0-Hmqls_N5izYCDfuf8CU8SNmkfWl1l7pinJC1POUD-JcLazbiP7Qg5OIx64_BdyTlp0IdUiC3nrjxRECbrHLfVhau3QKFgzSCvBJli-QaTuAMU-iHzHI-8X2e6rRyfM_Ha7VeIsGvVeTBlIYLuCrfGJ4HIbfVjQzSbSoB8M2m4FOPjZKHn0tB0eB3XuzhAYroPEBRm8rnXFXa2LpOLIe37I76mR0fG3kfEWbTVHBfqV6SXATrrM01-JR1EjpjUD_Ac1VpOLrocygvUaiMu1LYZClEcfTtVASQ-3yQ8enOHUWj3c2Pr7UFLGVhXrYI3SvMmRw3Dw2JxJ5abUCCGfqKonELh7bwPGAHxJLIhFt6NbkK0wKxG8cOXOInpex2FDEj3br7kZtcn06jvqKEvbdCamlda0HpSiWDQAwBsVGC_LKvplkzxLmDm4PYM0mHqHYFY7PepoGx1XF6yStEOc8jMLfJl-8FgAIASCkjdro0UGd_-ZLuxdoZYI6KymrLhkiHLkQZN_iZTO99DllbrkCZlzJc3_2e3CGRf2FWMequSAaGq7o3omKAOT1R9dfyN4ZU-dVtvQlSCdoMTLdylH48YHhgVVF-ZoRVZf6km_4dRmmsolcRSkctPhUUUYC0rW6Hzbi7SWQ5WfRSuDS8UmBN5se2dE7SQ1ghnBoCu3x1Kls7kuVb_67fmA-qeV4y9kHug5-yguCFgn0sWq9CmYyQqMGSJJ6WKpyEtyogxJ3zJhhdtwz8JN0S-0yQK1Wv-zte732SrjDh33wcikIhWtIqorIKWfUkfmN__UBN4n7aEtavgHdCi8t-7Xj352nyfgmDTErfLqBv6qkiRrreuSDfhkQRyMIa1tONx-7ydQSINHEz75KEHet_q1nwwZoYv0N-tT_0E7ZeKi9a0WpgA4CVlOhzkc_kP81NfpBqUZT_zn8ES9kYjc1BtA3v_n67Gsm0zbJelO45P1AfpLEJw8yOz16IkamzyMw=w1920-h918)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you already know the result and would like to give the model feedback to improve its predictions, you can submit the ground truth, otherwise you can close the modal.
 
-### `npm run eject`
+## Additional Feature
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can also view the history of predictions for which users have submitted the ground truth by clicking the Previous Submissions button on the app bar or going to the following URL: [http://localhost:3000/previous](http://localhost:3000/previous). You will then see a table of all the previous submissions and their results.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Previous Submissisions Table](https://lh3.googleusercontent.com/fife/ALs6j_EYj_Heun1DEUJxiG8Sqx_8m-zYSxcL960YF_u6flZBZgdWelBkiIoZax7XNTlt8VX6dun5UjhGnrtdlI1Yq8941hbGo6lgNkPODMzOfPTRf4Y5uDE_i7Y1TulInb6P-KHcgcJbGfkHdDz2hhoZT49V7tdxNtSqHzWZ2serUMBXrHrXRljmXyz_VlS9gH3hP19qVWtALAB_3d6eYvySmD8vYCmFtaiD8cxzSqRWcx2q9MulUVrFUF6-iEXRExctZXS_HvoV5mz1aKHoamZ4mx67mIyYOoXCR29MHwfahJev4ZKoRDuV_zcgZ8lUwc-iVhZXGQhHd5uzAIhJPGfYsV3FgbFJ_bkknxdlpc6ZSSZ8CRGXeHD392OccpKPB1ZijkZ4mKIN1m1hMm6XWj4pn_zb7Ekff41-fM5tL_R_qa27ueLrHNbXG5J8i-wI9woqsJFFjHltGNKbNuZcqz3LOQq72XZPSvryjkWuepcA5sN-AD3-hE8QVuPrLgTjQYSfupcYRcORH4rcYdI4feanwuRtn5t1Fc_yo1hVTWCWh0w6hkyGRdR1vlC2uxGUkuvVDxQ_yIRnUDf8Vpe9XHkt4pMuES2WGGYL7CLqULk3VhL7EgwyK-bvQC4ZbjC2Sdw8Bv0isJxBYvIQE49jnOUE4HGiyMknVZurfIJTBKfHMw9KE65c7qxOEwJGbQQQAwJu5PGxfjBKhL9XMyq9hD91PM6JWXrSDAUfXqoooNGmF69kQVvGekNnqlUnl1K2izYADpKYD9EhYPuutfSM7F8beh5qUKMjHV04cjSJS9RIJHECG06lm92p9vMyLJSSYpA6oubvNdIpFFY1QwKTI54trd5_qy0JwThj5dDHMmdMkBcXvxmHNWjtyKdnI9ZCQxCbrfICB6gqtJ5xqhgSsxu85ja-bic9-mSmQuUSDsO3rLjVlVF9-V34sbU1cOXgXUeKUsDUDO5qHkYrIDzHCgIKZhEZbMdVAcrlU8t2nVAZuv99-uScSNJlmy52sHYG1JSL1QhbnnjKoCeVH8VRpJ51gUUTyvIvunEoAUovsc-zeOjjMqPeWGqSriYrl9gTsIy8m8zAXoc-JXff35pLoIiLFOGGAwGu4HmE4hvMq77MSMjTLwFKpxZiLqi5wwy-Llz-l7ZmVvyMxtxuTQQOzi9ZKBKHapp76i8eUQtXQ-7AYh9Z8wPfCvU7kpAtFmApCdThvPq-taqP9-9_UWW-nu3PMnr29dTYNneZiAdp-vbG_iZ2wbNJstVc8wfkjQd5gD1qLaIOahDaDfa2VP0MBuH2Qh3VJa90aJqvrlcqgsWr8L9DnEQi4hoXkK0gtwZR4mKmF3_f-htdoqDEOr-8TqVRounqDm5cJi2VE7-uW8cs2Cghp0xAMywq5lr54_eDYjjM5d0RZdGgjou7ioAvJ0mtNSR6bkhtt2P6ZJtWpQxJe8W91QP9Azyt4V7PdNIuFRtTAqw8-CfmewvbQkk7sQAZtbrl5TjlzL6bNoy1VYLiMXsNNrJaPiBFFaSqkmeg08nCcD1gYJcYpD6AkLLAX-01TXDftlVa_9uWkV2tozyGcGhKiycdiSm5HffoLDE1qQD-qdFkWn_bb8_pzXtuGP8TudichkAm1SqC5jAhiK4JY20m67DZtg=w2000-h1296)
